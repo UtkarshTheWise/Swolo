@@ -44,7 +44,7 @@ To get Swolo up and running on your local machine, follow these steps:
 The project is organized into logical directories:
 
 -   `assets/`: Contains images, 3D models, and other media.
--   `backend/`: A placeholder for future backend development.
+-   `backend/`: Folder containing backend files, the generate music and audio mixing page and corresponding html,javascript and css files.
 -   `models/`: Stores models for the Three.js scene.
 -   `node_modules/`: Contains installed npm packages.
 -   `index.html`: The main entry point of the website.
@@ -53,7 +53,6 @@ The project is organized into logical directories:
 -   `README.md`: This file.
 -   `script.js`: Handles all core JavaScript logic, API calls, and UI interactions.
 -   `style.css`: Manages all styling and layout, including the retro synthwave aesthetic.
--   `vaporwave-bg.js`: A dedicated script for the background effects.
 
 ***
 
