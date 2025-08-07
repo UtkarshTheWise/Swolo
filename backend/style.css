@@ -1,0 +1,262 @@
+:root {
+  --primary-bg: #0d0d0d;
+  --secondary-bg: #1a1a1a;
+  --primary-text: #f0f0f0;
+  --accent-red: #ff3333;
+  --accent-red-hover: #ff6666;
+  --border-color: #2c2c2c;
+  --glow-shadow: 0 0 10px rgba(255, 51, 51, 0.6);
+  --font-main: "Raleway", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-red);
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+body {
+  font-family: var(--font-main);
+  font-weight: 300;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  background: linear-gradient(135deg, var(--primary-bg), var(--secondary-bg), var(--primary-bg));
+  background-size: 300% 300%;
+  animation: gradient-animation 25s ease infinite
+  overflow: auto; 
+  height: auto;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  padding: 40px;
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+  width: 500px;
+  position: relative;
+  z-index: 1;
+  /* Animation for the container itself */
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-family: 'LED Dot-Matrix', sans-serif;
+  font-weight: 300;
+  color: var(--accent-red);
+  text-shadow: 0 0 3px var(--accent-red);
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+input,
+select,
+button {
+  font-family: var(--font-main);
+  font-weight: 300;
+  font-size: 16px;
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  background-color: transparent;
+  color: var(--primary-text);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent-red);
+  box-shadow: var(--glow-shadow);
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--accent-red);
+  border: none;
+  color: var(--primary-text);
+  box-shadow: 0 0 5px rgba(255, 51, 51, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: var(--accent-red-hover);
+  box-shadow: var(--glow-shadow);
+  transform: scale(1.02);
+}
+
+#output {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  min-height: 50px;
+  text-align: left;
+  background-color: var(--secondary-bg);
+}
+
+#audioPlayer {
+  width: 100%;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#audioPlayer::-webkit-media-controls-panel {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: white;
+}
+
+#audioPlayer::-webkit-media-controls-play-button,
+#audioPlayer::-webkit-media-controls-volume-slider {
+  filter: hue-rotate(180deg) contrast(120%);
+}
+
+#audioPlayer:hover {
+  transform: scale(1.02);
+}
+
+#checkUsageBtn {
+  margin-top: 20px;
+}
+
+#usageStatus {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--accent-red);
+  text-shadow: 0 0 1px var(--accent-red);
+  font-family: "Poppins", sans-serif;
+}
+
+#spectrogramCanvas {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  background-color: black;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+#audioMixer {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 1s ease-out;
+}
+
+#audioMixer h2 {
+  font-family: 'LED Dot-Matrix', sans-serif;
+  font-weight: 300;
+  color: var(--accent-red);
+  text-shadow: 0 0 2px var(--accent-red);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#audioMixer input[type="file"],
+#audioMixer select,
+#audioMixer button {
+  margin-bottom: 15px;
+}
+
+#audioMixer label {
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 6px;
+  color: var(--primary-text);
+}
+
+#resetBtn {
+  margin-top: 10px;
+  background-color: #ff3333;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resetBtn:hover {
+  background-color: #ff6666;
+}
+
+
+#audioMixerEffects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#audioMixerEffects select,
+#audioMixerEffects input[type="range"] {
+  width: 100%;
+}
+
+#audioMixer audio {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+#audioMixer audio:hover {
+  transform: scale(1.01);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+  }
+}

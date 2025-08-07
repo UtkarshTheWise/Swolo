@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Swolo AI Music Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- importing fonts, tonejs, wavesurferjs and other modules required-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/led-dot-matrix" rel="stylesheet">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://unpkg.com/tone@next/build/Tone.js"></script>
+</script>
+  </head>
+  <body>
+    <!-- Main container to center and style the application content -->
+    <div class="container">
+      <!-- Main heading for the page -->
+      <h1>Generate AI Music with Swolo</h1>
+      <!-- Form for user to input music generation parameters -->
+      <form id="musicForm">
+         <!-- Text input for describing the music prompt, taking parameters genre, mood and tempo as required by the hackathon problem statement -->
+        <input
+          type="text"
+          id="prompt"
+          placeholder="Describe the genre,mood and tempo (e.g., chill lofi with flute)"
+          required
+        /><br /><br />
+        <!-- Number input for specifying the duration of the track -->
+        <input
+          type="number"
+          id="duration"
+          placeholder="Duration in seconds (e.g. 20)"
+        /><br /><br />
+        <!-- Button to submit the form and trigger music generation -->
+        <button type="submit">🎶 Generate Music</button>
+         <!-- Paragraph to display status updates to the user -->
+        <p id="status"></p>
+      </form>
+      <!-- Button to check API usage limits -->
+      <button id="checkUsageBtn">📊 Check Usage</button>
+      <p id="usageStatus"></p>
+      <!-- Audio player element to play the generated music -->
+      <audio
+        id="audioPlayer"
+        controls=""
+        style="display: block"
+        src="https://d28l47h1uhvbhl.cloudfront.net/assets/music_file/2aad1ac0-d239-40d5-bd69-8882c0209b9b.mp3?cb=20250807154355"
+      ></audio>
+      <!-- Container for the Wavesurfer.js waveform visualization -->
+      <div id="waveform" style="width: 100%; height: 128px; position: relative; padding-top: 5%;">Waveform will be generated here!</div>
+      <!-- Heading for the Spectrogram section -->
+      <h1>Spectogram Canvas</h1>
+      <!-- Canvas element for displaying a spectrogram of the audio -->
+      <canvas id="spectrogramCanvas" width="800" height="256">
+      </canvas>
+      <!-- Button to reset the page and clear outputs -->
+      <button id="resetBtn">🔄 Reset Page</button>
+      <!-- Section for the audio mixer functionality -->
+      <div id="audioMixer">
+  <h2>🎛️ Audio Mixer/Harmonizer</h2>
+  <!-- File input for the base audio track -->
+  <label for="baseTrack">Base Audio:</label>
+  <input type="file" id="baseTrack" accept="audio/*">
+<!-- File input for a vocal track to be harmonized -->
+  <label for="vocalTrack">Vocal Track:</label>
+  <input type="file" id="vocalTrack" accept="audio/*">
+<!-- Button to trigger the mixing and harmonizing process -->
+  <button id="mixButton">Mix Audio / Harmonize</button>
+<!-- Container for audio effects sliders -->
+  <div id="audioMixerEffects">
+    <!-- Slider to control the reverb effect -->
+    <label for="reverb">Reverb:</label>
+    <input type="range" id="reverb" min="0" max="1" step="0.1" value="0.5">
+    <!-- Slider to control the pitch shift effect -->
+    <label for="pitch">Pitch Shift:</label>
+    <input type="range" id="pitch" min="0.5" max="2" step="0.1" value="1">
+    <!-- Slider to control the delay effect -->
+    <label for="delay">Delay (ms):</label>
+    <input type="range" id="delay" min="0" max="1000" step="50" value="0">
+  </div>
+  <!-- Audio player for the mixed audio output -->
+  <audio id="mixedAudio" controls></audio>
+</div>
+<!-- Main JavaScript file to handle all the page's logic and interactions -->
+    <script src="main.js"></script>
+  </body>
+</html>
