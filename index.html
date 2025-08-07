@@ -1,0 +1,140 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.cdnfonts.com/css/led-dot-matrix" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWOLO</title>
+  <link rel="stylesheet" href="style.css" />
+ <script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/examples/jsm/controls/OrbitControls.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js",
+    "three/examples/jsm/postprocessing/EffectComposer.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/EffectComposer.js",
+    "three/examples/jsm/postprocessing/RenderPass.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/RenderPass.js",
+    "three/examples/jsm/postprocessing/UnrealBloomPass.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/UnrealBloomPass.js",
+    "three/examples/jsm/loaders/GLTFLoader.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js"
+  }
+}
+</script>
+
+
+</head>
+<body>
+  
+  <canvas id="webgl"></canvas>
+<div id="loader">
+  <h1 class="loader-text">Loading CodeZilla...</h1>
+</div>
+  <div id="cursor"></div>
+
+  <div id="overlay">
+    <h1 class="floating-text">SWOLO</h1>
+    <p class="subtext">Generate custom soundtracks with AI. 🎸</p>
+  </div>
+
+  <canvas id="webgl"></canvas>
+
+   <div class="bg-gradient-overlay"></div>
+
+
+
+
+  <section class="reveal about-section">
+  <div class="about-content">
+    <h2 class="about-heading">About Our SWOLO</h2>
+    <p class="about-text">
+      GAI1 is an AI-powered music composition tool built for creators. It generates original melodies and soundtracks based on genre, mood, and tempo — perfect for content, games, and media. 
+      With intuitive controls and real-time preview, users can fine-tune their tracks to match any creative vision. SWOLO leverages advanced machine learning models to ensure each composition is unique and copyright-safe, empowering you to focus on storytelling and production.
+    </p>
+  </div>
+</section>
+
+
+  <section class="reveal features-section">
+  <h2 class="features-heading">Features</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>Genre-Based Composition</h3>
+      <p>Select a genre and let the AI compose a matching soundtrack.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Mood Matching</h3>
+      <p>From chill to epic — generate music that fits your vibe.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Interactive Playback</h3>
+      <p>Preview, download, and remix your tracks.</p>
+    </div>
+  </div>
+</section>
+
+ <section class="reveal main-action">
+  <div class="cta-container">
+    <h2 class="cta-heading">Ready to compose your soundtrack?</h2>
+    <p class="cta-subtext">Let AI turn your vibe into music magic. 🎶</p>
+    <a href="composer.html" class="cta-button">Generate Your Music</a>
+  </div>
+</section>
+<div class="bg-float circle1"></div>
+<div class="bg-float circle2"></div>
+
+<section class="pricing-section reveal">
+  <h2 class="pricing-title">Pricing Plans</h2> <!-- This is above the grid -->
+  <div class="pricing-grid">
+
+    <div class="feature-card starter-card">
+  <h3>Starter</h3>
+  <p>Basic features for small projects.</p>
+
+  <!-- Hidden details -->
+  <div class="plan-details">
+    <ul>
+      <li>✔️ 1 Project</li>
+      <li>✔️ Basic Support</li>
+      <li>✔️ Community Access</li>
+    </ul>
+  </div>
+</div>
+   <div class="feature-card premium-card">
+  <h3>Premium Plan</h3>
+  <p>Best for power users</p>
+
+  <div class="plan-details">
+    <ul>
+      <li>✔️ Unlimited Projects</li>
+      <li>✔️ Priority Support</li>
+      <li>✔️ Advanced Analytics</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+</div>
+
+</div>
+<div class="bg-float circle3"></div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  
+
+
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
