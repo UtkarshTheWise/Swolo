@@ -4,7 +4,7 @@
 
 Swolo is an innovative project that blends the power of generative AI with creative audio production tools. Inspired by Saraswati and Apollo, the goddesses of music from Hindu and Greek mythology, Swolo provides users with an intuitive platform to generate unique music and then creatively harmonize it with their own vocals.
 
-## ✨ Features
+##✨ Features
 
 AI Music Generation: Utilizing a pre-trained generative AI model via Loudly's API, users can create custom music tracks by simply providing a text prompt (e.g., "Chill Lofi with Flute") and a desired duration.
 
@@ -14,7 +14,7 @@ Integrated Audio Mixer: A powerful, in-browser audio mixer allows users to uploa
 
 Stunning Synthesizer-Inspired UI: The frontend, built with HTML, CSS, and JavaScript, boasts a retro synthesizer aesthetic. It features a Three.js-powered 3D gramophone model and a synthwave grid, complemented by smooth CSS breathing animations and scroll effects for a visually captivating and user-friendly experience.
 
-## 💻 Tech Stack
+##💻 Tech Stack
 
 Frontend:
 HTML5, CSS3, JavaScript
@@ -33,6 +33,7 @@ cd Swolo```
 ```Open the index.html file in your browser to launch the application.```
 
 ##🗺️ Project Structure
+
 The project is organized into logical directories:
 assets/: Contains images, 3D models, and other media.
 backend/: A placeholder for future backend development.
@@ -47,6 +48,7 @@ style.css: Manages all styling and layout, including the retro synthwave aesthet
 vaporwave-bg.js: A dedicated script for the background effects.
 
 ##🌟 Future Scope
+
 Swolo is just the beginning. The potential for expansion is vast:
 Custom Generative AI Model: Developing our own in-house AI/ML model for music generation, offering a fully custom solution.
 Public-Facing API: Creating our own API that others can call to generate music, fostering a developer community.
@@ -54,4 +56,5 @@ Advanced Vocal Refinement: Enhancing the vocal harmonization features to include
 Scientific and Analytical Applications: Expanding into fields like audio forensics to help decode and clarify hard-to-understand audio recordings.
 
 ##🙏 Acknowledgements
+
 We'd like to extend our gratitude to the creators of Loudly for their accessible and powerful API, as well as the developers of Three.js, WebAudio API, and Tone.js for providing the foundational tools that made our creative vision a reality. Thank you to the event organizers of CodeZilla for giving us this deeply influential learning experience and the opportunity to present our skills.
