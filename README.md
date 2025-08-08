@@ -1,12 +1,13 @@
 # Swolo: The AI-Powered Music Generation and Audio Harmonization Tool 🎶
 
-> **Swolo** is an innovative project that blends the power of generative AI with creative audio production tools. Inspired by Saraswati and Apollo, the goddesses of music from Hindu and Greek mythology, Swolo provides users with an intuitive platform to generate unique music and then creatively harmonize it with their own vocals. This project was made by team How2Possible consisting of Utkarsh Mishra, Arihant Singh, Shreyash Saxena and Unnati Tiwari.
+> **Swolo** is an innovative project that blends the power of generative AI with creative audio production tools. Inspired by Saraswati and Apollo, the goddesses of music from Hindu and Greek mythology, Swolo provides users with an intuitive platform to generate unique music and then creatively harmonize it with their own vocals. This project has been made by team How2Possible consisting of Utkarsh Mishra, Arihant Singh, Shreyas Saxena and Unnati Tiwari.
 
 ***
 
 ## ✨ Features
 
 - **AI Music Generation**: Utilizing a pre-trained generative AI model via Loudly's API, users can create custom music tracks by simply providing a text prompt (e.g., "Chill Lofi with Flute") and a desired duration.
+- **User Dashboard**: A personal dashboard, powered by **Firebase** for authentication and database management, allows users to log in securely with their Google account. They can easily track, download, and delete their previously generated music files.
 - **Dynamic Audio Visualization**: The platform leverages the **WebAudio API** and **Tone.js** to display real-time spectrograms and waveforms of the generated audio, offering a visually engaging experience.
 - **Integrated Audio Mixer**: A powerful, in-browser audio mixer allows users to upload their own vocals and mix them with the AI-generated base track. Features include pitch, reverb, and delay controls, enabling sophisticated harmonization.
 - **Stunning Synthesizer-Inspired UI**: The frontend, built with **HTML**, **CSS**, and **JavaScript**, boasts a retro synthesizer aesthetic. It features a **Three.js**-powered 3D gramophone model and a synthwave grid, complemented by smooth CSS breathing animations and scroll effects for a visually captivating and user-friendly experience.
@@ -22,6 +23,8 @@
     -   **Tone.js**: For advanced audio synthesis and effects
 -   **Backend/API**:
     -   **Loudly's API**: For AI music generation
+-   **Authentication & Database**:
+    -   **Firebase**: For Google login, authentication, and database services
 
 ***
 
@@ -44,7 +47,7 @@ To get Swolo up and running on your local machine, follow these steps:
 The project is organized into logical directories:
 
 -   `assets/`: Contains images, 3D models, and other media.
--   `backend/`: Folder containing backend files, the generate music and audio mixing page and corresponding html,javascript and css files.
+-   `backend/`: Contains all the files for the backend, the dashboard, the login and the page to generate music. 
 -   `models/`: Stores models for the Three.js scene.
 -   `node_modules/`: Contains installed npm packages.
 -   `index.html`: The main entry point of the website.
@@ -53,6 +56,7 @@ The project is organized into logical directories:
 -   `README.md`: This file.
 -   `script.js`: Handles all core JavaScript logic, API calls, and UI interactions.
 -   `style.css`: Manages all styling and layout, including the retro synthwave aesthetic.
+  
 
 ***
 
@@ -69,4 +73,4 @@ Swolo is just the beginning. The potential for expansion is vast:
 
 ## 🙏 Acknowledgements
 
-We'd like to extend our gratitude to the creators of **Loudly** for their accessible and powerful API, as well as the developers of **Three.js**, **WebAudio API**, and **Tone.js** for providing the foundational tools that made our creative vision a reality. Thank you to the event organizers of **CodeZilla** for giving us this deeply influential learning experience and the opportunity to present our skills.
+We'd like to extend our gratitude to the creators of **Loudly** for their accessible and powerful API, the developers of **Firebase** for their robust authentication and database services, and the creators of **Three.js**, **WebAudio API**, and **Tone.js** for providing the foundational tools that made our creative vision a reality. Thank you to the event organizers of **CodeZilla** for giving us this deeply influential learning experience and the opportunity to present our skills.
