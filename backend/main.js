@@ -1,4 +1,4 @@
-const API_KEY = "ZuqI28B2lIAbQ6RNsedRvJHSLa9qZqaFmMAtmB1EJoo";
+const API_KEY = "OZpXEIHRaE0hchUAqfC_YCNf4UcLeVN6n9ByQobRZzw";
 const API_URL = "https://soundtracks.loudly.com/api/ai/prompt/songs";
 
 document.addEventListener("DOMContentLoaded", () => {
