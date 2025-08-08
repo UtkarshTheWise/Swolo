@@ -1,6 +1,6 @@
 # Swolo: The AI-Powered Music Generation and Audio Harmonization Tool 🎶
 
-> **Swolo** is an innovative project that blends the power of generative AI with creative audio production tools. Inspired by Saraswati and Apollo, the goddesses of music from Hindu and Greek mythology, Swolo provides users with an intuitive platform to generate unique music and then creatively harmonize it with their own vocals.
+> **Swolo** is an innovative project that blends the power of generative AI with creative audio production tools. Inspired by Saraswati and Apollo, the goddesses of music from Hindu and Greek mythology, Swolo provides users with an intuitive platform to generate unique music and then creatively harmonize it with their own vocals. This project was made by team How2Possible consisting of Utkarsh Mishra, Arihant Singh, Shreyash Saxena and Unnati Tiwari.
 
 ***
 
@@ -47,7 +47,7 @@ To get Swolo up and running on your local machine, follow these steps:
 The project is organized into logical directories:
 
 -   `assets/`: Contains images, 3D models, and other media.
--   `backend/`: A placeholder for future backend development.
+-   `backend/`: Contains all the files for backend processing of music generation, login and dashboard.
 -   `models/`: Stores models for the Three.js scene.
 -   `node_modules/`: Contains installed npm packages.
 -   `index.html`: The main entry point of the website.
@@ -56,7 +56,6 @@ The project is organized into logical directories:
 -   `README.md`: This file.
 -   `script.js`: Handles all core JavaScript logic, API calls, and UI interactions.
 -   `style.css`: Manages all styling and layout, including the retro synthwave aesthetic.
--   `vaporwave-bg.js`: A dedicated script for the background effects.
 
 ***
 
