@@ -110,7 +110,7 @@ scene.add(gridHelper);
 
 // Load Grammophone model
 const gltfLoader = new GLTFLoader(); // Renamed to avoid conflict
-gltfLoader.load('/models/scene.gltf', (gltf) => {
+gltfLoader.load('./models/scene.gltf', (gltf) => {
     grammophoneModel = gltf.scene;
     grammophoneModel.scale.set(5, 5, 5);
     grammophoneModel.position.set(0, -1, 0);
