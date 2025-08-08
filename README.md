@@ -40,6 +40,10 @@ To get Swolo up and running on your local machine, follow these steps:
 2.  **Start the server**:
     Open the `index.html` file in your browser to launch the application.
 
+    OR
+
+    Directly use from [https://utkarshthewise.github.io/Swolo/](https://utkarshthewise.github.io/Swolo/)
+
 ***
 
 ## 🗺️ Project Structure
