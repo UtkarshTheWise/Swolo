@@ -115,9 +115,7 @@ gltfLoader.load('/models/scene.gltf', (gltf) => {
     grammophoneModel.scale.set(5, 5, 5);
     grammophoneModel.position.set(0, -1, 0);
     grammophoneModel.traverse((child) => {
-        if (child.isMesh) {
-            child.material.color.setHex(0xff0000);
-        }
+        
     });
     scene.add(grammophoneModel);
 });

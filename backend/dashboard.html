@@ -2,17 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- importing fonts, tonejs, wavesurferjs and other modules required-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="dashboard.css" />
+    <title>Music Dashboard</title>
+    <!-- Link to the separate CSS file -->
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to the Dashboard</h1>
-    <script src="login.js" defer type="module"></script>
+
+    <div class="dashboard-container">
+        <!-- User Profile Section -->
+        <header class="user-profile">
+            <img id="profile-img" src="https://placehold.co/100x100/36454F/ffffff?text=User" alt="User Profile Image">
+            <div>
+                <h1 id="user-name" class="gradient-text">Welcome, User!</h1>
+                <p id="user-id-text">User ID: <span id="user-id">Loading...</span></p>
+            </div>
+            <button id="logout-button" class="btn-logout">Log Out</button>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <section class="music-controls">
+                <h2>Your Generated Music</h2>
+                <button id="generate-music-btn" class="btn-primary">Generate More Music</button>
+            </section>
+
+            <!-- Music List Section -->
+            <section id="music-list" class="music-list">
+                <!-- Music cards will be dynamically inserted here by JavaScript -->
+                <p class="no-music-message" id="no-music-message">You don't have any generated music yet.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal for displaying music information -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title">File Information</h3>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+    
+    <!-- Link to the separate JS file -->
+    <script src="dashboard.js" type="module"></script>
+    <script src="login.js" type="module"></script>
 </body>
 </html>
